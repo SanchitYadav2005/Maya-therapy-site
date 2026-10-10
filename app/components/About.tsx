@@ -1,17 +1,24 @@
 
 export default function About() {
   return (
-    <section id="about" className="scroll-mt-24 bg-white py-20 md:py-28">
+    <section
+      id="about"
+      className="scroll-mt-24 bg-white py-20 md:py-28"
+    >
       <div className="mx-auto grid max-w-7xl items-center gap-12 px-6 md:grid-cols-2 lg:gap-20 lg:px-10">
+        {/* Portrait image with original shadow effect */}
         <div className="relative mx-auto w-full max-w-md">
+          {/* Keep the original sage-green shadow effect */}
           <div className="absolute -right-4 -top-4 h-full w-full rounded-3xl bg-[#DCE8DF]" />
+
           <img
             src="/images/image.png"
             alt="Portrait of Dr. Maya Reynolds"
-            className="relative h-[420px] w-full rounded-3xl object-cover object-center"
+            className="relative aspect-[3/4] w-full rounded-3xl object-cover object-top"
           />
         </div>
 
+        {/* About content */}
         <div>
           <p className="text-sm font-medium uppercase tracking-[0.2em] text-[#718B78]">
             A little about me
@@ -38,15 +45,17 @@ export default function About() {
           <p className="mt-4 leading-8 text-[#64756B]">
             Depending on a client’s needs, the profile describes an
             approach drawing on{" "}
-            <span className="bg-[#DCE8DF] px-1">CBT</span>, mindfulness,
-            EMDR, and body-oriented techniques.
+            <span className="rounded-sm bg-[#DCE8DF] px-1">
+              CBT
+            </span>
+            , mindfulness, EMDR, and body-oriented techniques.
           </p>
 
           <a
             href="#services"
-            className="mt-8 inline-flex border-b border-[#718B78] pb-1 text-sm font-medium hover:text-[#718B78]"
+            className="mt-8 inline-flex border-b border-[#718B78] pb-1 text-sm font-medium transition hover:text-[#718B78]"
           >
-            Learn about the services
+            Learn about the services →
           </a>
         </div>
       </div>
